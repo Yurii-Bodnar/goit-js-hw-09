@@ -11,8 +11,56 @@ body {
   color: #212121;
   line-height: 1.5;
 }
-
+.timer {
+  display: flex;
+  justify-content: center;
+}
+#datetime-picker {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  display: flex;
+  border-radius: 10px;
+  background-color: inherit;
+  padding-left: 60px;
+  border-color: darkcyan;
+}
+[data-start] {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 70px;
+  height: 25px;
+  padding-left: 18px;
+  padding-top: 3px;
+  border-radius: 10px;
+  background-color: gainsboro;
+  color: darkslateblue;
+}
+[data-stop] {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 70px;
+  height: 25px;
+  padding-left: 18px;
+  padding-top: 3px;
+  border-radius: 10px;
+  background-color: gainsboro;
+  color: darkslateblue;
+}
+/* button {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 200px;
+}
 img {
   display: block;
   max-width: 100%;
-}
+} */
