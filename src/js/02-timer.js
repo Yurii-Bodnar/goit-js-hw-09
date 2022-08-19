@@ -28,7 +28,7 @@ const options = {
 flatpickr(pickerRef, options)
 
 btnStartRef.addEventListener("click", () => {
-      const intervalId = setInterval(() => {
+      const intervaleId = setInterval(() => {
     let dateEnd = new Date(pickerRef.value);
 let dateNow = new Date
         let deltaTime = dateEnd - dateNow;
@@ -40,7 +40,7 @@ hoursRef.textContent = `${hours}`;
 minutesRef.textContent = `${minutes}`;
 secondsRef.textContent = `${seconds}`;
   if (deltaTime <= 1000)  {
-      clearInterval(intervalId)
+      clearInterval(intervaleId)
       
           }
 },1000)  
