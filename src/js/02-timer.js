@@ -41,10 +41,10 @@ daysRef.textContent = `${days}`;
 hoursRef.textContent = `${hours}`;
 minutesRef.textContent = `${minutes}`;
 secondsRef.textContent = `${seconds}`;
-          
+       btnStartRef.disabled = true;   
   if (deltaTime <= 1000)  {
       clearInterval(intervalId)
-      
+      btnStartRef.disabled = true;
           }
       }, 1000)  
     
