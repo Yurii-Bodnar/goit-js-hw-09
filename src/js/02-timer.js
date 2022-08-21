@@ -34,18 +34,20 @@ let dateNow = new Date
     let deltaTime = dateEnd - dateNow;
     deltaTime--;
          
-    const timeComponens = { days, hours, minutes, seconds } = convertMs(deltaTime) ;
+    const {days, hours, minutes, seconds} = convertMs(deltaTime) ;
           
 
-daysRef.textContent = `${timeComponens.days}`;
-hoursRef.textContent = `${timeComponens.hours}`;
-minutesRef.textContent = `${timeComponens.minutes}`;
-secondsRef.textContent = `${timeComponens.seconds}`;
+daysRef.textContent = `${days}`;
+hoursRef.textContent = `${hours}`;
+minutesRef.textContent = `${minutes}`;
+secondsRef.textContent = `${seconds}`;
+          
   if (deltaTime <= 1000)  {
       clearInterval(intervalId)
       
           }
-},1000)  
+      }, 1000)  
+    
 })
 
 
