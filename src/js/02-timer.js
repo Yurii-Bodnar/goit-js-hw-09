@@ -28,19 +28,21 @@ const options = {
 flatpickr(pickerRef, options)
 
 btnStartRef.addEventListener("click", () => {
-      const intervaleId = setInterval(() => {
+      const intervalId = setInterval(() => {
     let dateEnd = new Date(pickerRef.value);
 let dateNow = new Date
-        let deltaTime = dateEnd - dateNow;
-          deltaTime--;
+    let deltaTime = dateEnd - dateNow;
+    deltaTime--;
          
-const timeComponens = {days, hours, minutes ,seconds} = convertMs(deltaTime);
-daysRef.textContent = `${days}`;
-hoursRef.textContent = `${hours}`;
-minutesRef.textContent = `${minutes}`;
-secondsRef.textContent = `${seconds}`;
+    const timeComponens = { days, hours, minutes, seconds } = convertMs(deltaTime) ;
+          
+
+daysRef.textContent = `${timeComponens.days}`;
+hoursRef.textContent = `${timeComponens.hours}`;
+minutesRef.textContent = `${timeComponens.minutes}`;
+secondsRef.textContent = `${timeComponens.seconds}`;
   if (deltaTime <= 1000)  {
-      clearInterval(intervaleId)
+      clearInterval(intervalId)
       
           }
 },1000)  
